@@ -4,7 +4,11 @@ $('document').ready(function(){
 $('button').on('click',function(){
 counter=counter+1;
 $('body').append('<div>'+'<button id = "delete">'+"DELETE"+'</button>'+'<button>'+"swap"+'</button>'+"apples"+'<p>'+counter+'</P>'+'</div>');
-$('#delete').remove('body');
-});
 
 });
+$('#delete').on('click',function(){
+    $('this').parent().remove();
+});
+});
+
+
